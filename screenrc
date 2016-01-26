@@ -1,0 +1,12 @@
+shell -$SHELL
+
+# Turn off GNU/Screen startup message
+startup_message off
+
+# Turn the even more annoying whole-screen-flash-on-tab-complete "feature"
+vbell off
+
+# Window list at the bottom. hostname, centered tabs and redmarked active windows:
+hardstatus alwayslastline
+hardstatus string '%{= bG}[ %{= bw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{W} %d/%m %{W}%c %{g}]'
+#hardstatus string '%{= rG}[ %{= rw}%?%-Lw%?%{g}(%{W}%f%t%?(%u)%?%{g})%{w}%?%+Lw%?%?%= %{g}][%{W} %d/%m %{W}%c %{g}]'
